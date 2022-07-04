@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Prime number</title>
+</head>
+<body>
+	<script type="text/javascript">
+		a=parseInt(prompt("enter number from : "));
+		b=parseInt(prompt("enter number to :"));
+
+		for (var i = a+1; i <=(b-1); i++){
+			flag=true;
+			for (var j = 2; j<=i/2; j++) {
+				if (i%j==0){
+					flag=false;
+					break;	
+				}
+			}
+			if (flag==true) {
+				console.log(i+" is prime ");
+			}
+		}
+	</script>
+</body>
+</html>
