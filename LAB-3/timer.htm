@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TIMER</title>
+</head>
+<body>
+	<input type="text" id="1" placeholder="enter Second">
+	<input type="button" value="start" onclick="timerdemo()">
+	<h1 id="t">TIME</h1>
+	<img src="./1.jpeg" id="img" style="visibility: hidden;width: 70%;">
+	<script type="text/javascript">
+		j=document.getElementById("1");
+		function timerdemo(){
+			temp=parseInt(j.value);
+			b=setInterval(timer,1000);
+		}
+		function timer() {
+			
+			if (temp<=0){
+				//temp=0;
+				clearInterval(b);
+				if (temp==0) {
+				document.getElementById('img').style.visibility="visible";
+				}
+			}
+			else{
+				temp--;
+				document.getElementById("t").innerHTML=temp;
+			}
+		}
+	</script>
+</body>
+</html>

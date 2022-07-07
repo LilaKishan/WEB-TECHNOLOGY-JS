@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BASIC CALCULATOR</title>
+</head>
+<body>
+	<h2 align="CENTER">CALCULATOR</h2>
+	<table border="1" align="center">
+		<tr>
+			<td>enter no</td>
+			<td>:</td>
+			<td>
+				<input type="" id="in1" placeholder="enter no">
+			</td>
+		</tr>
+		<tr>
+			<td>enter another no</td>
+			<td>:</td>
+			<td>
+				<input type="" id="in2" placeholder="enter no">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="CENTER">
+				<button onclick="add()">+</button>
+			</td>
+			<td align="CENTER">
+				<button onclick="sub()">-</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="CENTER">
+				<button onclick="mul()">*</button>
+			</td>
+			<td align="CENTER">
+				<button onclick="div()">/</button>
+			</td>
+		</tr>
+		<tr>
+			<td align="CENTER" colspan="2">
+				<button id="equal" onclick="display()">=</button>
+			</td>
+			<td>
+				<input type="" id="55">
+			</td>
+		</tr>
+	</table>
+	<h2 align="center" style="color: indianred;">DELVELOPED BY K.L.</h2>
+
+	<script type="text/javascript">
+		var a1=0;
+		
+			i1=document.getElementById("in1");
+			i2=document.getElementById("in2");
+		function add(){
+			ans=parseInt(i1.value)+parseInt(i2.value);
+			a1=ans;
+		}
+		function sub(){
+			ans=parseInt(i1.value)-parseInt(i2.value);
+			a1=ans;
+		}
+		function mul(){
+			ans=parseInt(i1.value)*parseInt(i2.value);
+			a1=ans;
+		}
+		function div(){
+			ans=parseInt(i1.value)/parseInt(i2.value);
+			a1=ans;
+		}
+		function display(){
+			document.getElementById("55").value=a1;
+		}
+	</script>
+</body>
+</html>
+
